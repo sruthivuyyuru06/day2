@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*attribute selector*/
+        a[target]{
+            background-color: rgba(0, 195, 255, 0.966)
+        }
+        /*class selector*/
+        .c1{
+            background-color: aquamarine;
+        }
+        /*type selector*/
+        p{
+            background-color: blanchedalmond;
+        }
+        /*id selector*/
+        #id1{
+            background-color: antiquewhite;
+        }
+        /*universal selector*/
+        *{
+            background-color: ghostwhite;
+        }
+        /*descendant selector*/
+        div p{
+            background-color: cyan;
+        }
+        /*child selector*/
+        div>p{
+            background-color: rgb(143, 188, 188);
+        }
+        /*adjacent sibiling selector*/
+        div+p{
+            background-color: rgb(105, 105, 105);
+        }
+        /*general sibiling selector*/
+        div~p{
+            background-color: khaki;
+        }
+        /*psuedo selector*/
+        a:hover{
+            background-color: darkslategray;
+        }
+        a:link{
+            background-color: lightpink;
+        }
+        a:visited{
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="c1">Selectors example</h1>
+    <a href="https://youtube.com" target="_blank">youtube</a>
+    <a href="https://youtube.com">youtube2</a>
+    <p id="id1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto illum ut sed. Illo expedita reiciendis recusandae consequuntur tenetur aperiam fugit, deserunt assumenda iste voluptate dolore dolores quos voluptas, ullam quidem?</p>
+    <p id="id2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam architecto eligendi velit consequatur, cumque veritatis in quia sit possimus, fugit commodi delectus? Mollitia minus earum expedita error ipsa. Architecto, veritatis.</p>
+    <div>
+       <p>Paragraph inside div</p>
+       <section>
+        <p>Paragraph inside section and div</p>
+       </section>
+       <p>Paragraph inside div</p>
+    </div>
+    <p>Paragraph tag</p>
+    <p>Paragraph tag</p>
+    <div>
+        <p>Paragraph inside div</p>
+        <p>Paragraph inside div</p>
+
+    </div>
+    <a href="#">Link 1</a>
+    <a href="https://amazon.com">Link 2</a>
+</body>
+</html>
